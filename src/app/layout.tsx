@@ -13,6 +13,7 @@ const inderSans = Inder({
   weight: '400',
   display: 'swap',
   preload: true,
+  subsets: ['latin'],
 });
 
 const dmSerifDisplay = DM_Serif_Text({
@@ -20,6 +21,7 @@ const dmSerifDisplay = DM_Serif_Text({
   weight: '400',
   display: 'swap',
   preload: true,
+  subsets: ['latin'],
 });
 
 const merriweather = Merriweather({
@@ -27,6 +29,7 @@ const merriweather = Merriweather({
   weight: '700',
   display: 'swap',
   preload: true,
+  subsets: ['latin'],
 });
 
 const gildaDisplay = Gilda_Display({
@@ -34,6 +37,7 @@ const gildaDisplay = Gilda_Display({
   weight: '400',
   display: 'swap',
   preload: true,
+  subsets: ['latin'],
 });
 
 const windSong = WindSong({
@@ -41,6 +45,7 @@ const windSong = WindSong({
   weight: '400',
   display: 'swap',
   preload: true,
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
