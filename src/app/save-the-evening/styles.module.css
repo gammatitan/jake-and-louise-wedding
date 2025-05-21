@@ -1,0 +1,107 @@
+.main {
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px 0 64px;
+}
+
+.headerText {
+  margin: 0 auto;
+  width: 80%;
+
+  @media (min-width: 768px) {
+    width: 320px;
+  }
+}
+
+.content {
+  text-align: center;
+}
+
+.intro {
+  font-family: var(--font-inder-sans);
+  color: #7B6F2E;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.names {
+  font-family: var(--font-gilda-display);
+  margin: 24px 0 32px;
+  color: #493F09;
+  letter-spacing: 4px;
+  font-size: 2rem;
+}
+
+.info {
+  font-family: var(--font-merriweather);
+  color: #7B6F2E;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.address {
+  display: inline-block;
+  margin-top: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+
+  &:focus {
+    outline: #493F09 1px solid;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+   opacity: 0.8;
+  }
+}
+
+.invitationToFollow {
+  margin-top: 48px;
+  font-family: var(--font-inder-sans);
+  color: #493f09;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.footer {
+  position: relative;
+  margin-top: 64px;
+  width: 100%;
+  z-index: 2;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.sox {
+  position: absolute;
+  bottom: 10px;
+  width: 120px;
+  left: -25px;
+  z-index: 3;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.background {
+  inset: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 50%;
+}

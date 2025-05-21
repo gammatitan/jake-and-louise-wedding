@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { Metadata } from 'next';
 import styles from './styles.module.css';
-import { HeaderText } from '@/app/save-the-date/components/HeaderText';
-import { Background } from '@/app/save-the-date/components/Background';
+import { HeaderText } from '@/app/save-the-evening/components/HeaderText';
+import { Background } from '@/app/save-the-evening/components/Background';
 
-const metadataTitle = 'Jake & Louise Wedding | Save the Date';
+const metadataTitle = 'Jake & Louise Wedding | Save the Evening';
 const metadataDesc = 'Sunday 23rd August 2026 at The Old Mill, Aldermaston';
 
 export const metadata: Metadata = {
@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: metadataTitle,
     description: metadataDesc,
-    images: '/save-the-date-preview.png',
+    images: '/save-the-evening.png',
   },
 };
 
-export default function SaveTheDatePage() {
+export default function SaveTheEveningPage() {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
