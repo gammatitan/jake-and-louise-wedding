@@ -6,6 +6,7 @@ import {
   Gilda_Display,
   WindSong,
 } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 
 const inderSans = Inder({
@@ -63,6 +64,7 @@ export default function RootLayout({
         className={`${inderSans.variable} ${dmSerifDisplay.variable} ${merriweather.variable} ${gildaDisplay.variable} ${windSong.variable}`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
